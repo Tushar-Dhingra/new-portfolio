@@ -2,7 +2,7 @@ import React from "react";
 import WorkExperienceItem from "./WorkExperienceItem";
 const experiences = [
     {
-      date: "NOV 2024 - FEB 2025",
+      date: "",
       title: "React JS Developer Intern",
       company: "Millennia Ahead Technology",
       description:
