@@ -16,10 +16,10 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/tushar-dhingra99/" className="hover:text-white text-lg  ">
               Linkedin
             </a>
-            <a  href="#" className="hover:text-white text-lg ">
+            <a  href="mailto:tushardhingra808@gmail.com" className="hover:text-white text-lg ">
               Email
             </a>
-            <a href="#" className="hover:text-white text-lg ">
+            <a href="https://x.com/tushardhingraa" className="hover:text-white text-lg ">
               X
             </a>
           </div>

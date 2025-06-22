@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from "react";
+import { IoMdDownload } from "react-icons/io";
 
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
@@ -23,7 +24,7 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <div>
                     <p className="text-[#86868D] hidden md:block">
-                        Fullstack Web Developer <br />
+                        Fullstack Software Developer <br />
                         based in India
                     </p>
                 </div>
@@ -35,13 +36,25 @@ const Navbar = () => {
                     <a href="#work-experience" className="hover:underline hover:text-gray-400">
                         Experience
                     </a>
-                    <a href="#" className="hover:underline hover:text-gray-400">
+                    <a href="#collaborate" className="hover:underline hover:text-gray-400">
                         Hire me
                     </a>
                 </div>
                 {/* Contact */}
                 <div className="hidden md:flex relative items-center justify-end">
-                    <button className="bg-gray-700 px-5 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-200 ease-in">Contact Info</button>
+                <span className="flex items-center space-x-2">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download={true}
+                        href="/assets/Resume.pdf"
+                        className="flex items-center bg-gray-700 px-5 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-200 ease-in"
+                    >
+                        <IoMdDownload className="mr-2 mt-1" />
+                        Resume
+                    </a>
+                </span>
+
                 </div>
 
                 {/* Mobile Menu Icon */}

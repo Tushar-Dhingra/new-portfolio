@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Collaborate = () => {
     return (
-        <div className="max-w-screen-xl mx-auto py-12 framer-animation">
+        <div className="max-w-screen-xl mx-auto py-12 framer-animation" id="collaborate">
             <div className="flex flex-col lg:flex-row gap-8">
                 <div>
                     <h1 className="md:text-7xl text-3xl font-bold text-white mb-4">

@@ -5,25 +5,29 @@ import CaseStudyCard from "./CaseStudyCard";
 const CaseStudy = () => {
     const caseStudies = [
         {
-            imgSrc: "/assets/img/caseImg-1.jpeg",
-            title: "Finance Tracker",
-            description: "Web App",
+            imgSrc: "/assets/img/caseImg-1.png",
+            title: "Ticketr",
+            description: "Ticket booking platform with real-time seat management and payments integration.",
+            link: "https://nextjs-ticket-marketplace.vercel.app/",
         },
         {
-            imgSrc: "/assets/img/caseImg-4.jpeg",
+            imgSrc: "/assets/img/caseImg-2.png",
+            title: "Riderr",
+            description: "Uber-like app with enhanced UX, integrated wallet system, built for scalability, ride management, and real-time tracking.",
+            link: "https://m-clone-uber.netlify.app/",
+        },
+        {
+            imgSrc: "/assets/img/caseImg-3.png",
+            title: "Bookr",
+            description: "Hotel and Airbnb booking platform offering features like listing hotels, user ratings, and reviews.",
+            link: "https://hotel-flow.onrender.com/",
+        },
+        {
+            imgSrc: "/assets/img/caseImg-4.png",
             title: "Recipe App",
-            description: "Recipe Website",
+            description: "Full-stack recipe app with user authentication, recipe management, and social features.",
+            link: "https://recipesz-app.netlify.app/",
         },
-        {
-            imgSrc: "/assets/img/caseImg-3.jpeg",
-            title: "Hotel Flow",
-            description: "MERN Website",
-        },
-        {
-            imgSrc: "/assets/img/caseImg-2.jpeg",
-            title: "Portfolio",
-            description: "NextJS Portfolio",
-        }
     ];
 
     return (
@@ -44,6 +48,7 @@ const CaseStudy = () => {
                         imgSrc={study.imgSrc}
                         title={study.title}
                         description={study.description}
+                        link={study.link}
                     />
                 ))}
             </div>

@@ -12,13 +12,13 @@ const Banner = () => {
 
                 {/* Main Title */}
                 <h1 className="text-4xl md:text-7xl font-bold leading-snug text-[#ABABB5] ">
-                    A Fullstack Web Developer<br />
+                    A Fullstack Software Developer<br />
                 </h1>
 
                 {/* Visit Link Button */}
                 <div className="mt-12 mb-28">
                     <Link
-                        href="#"
+                        href="/assets/Resume.pdf"
                         className="inline-block bg-transparent border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition"
                     >
                         Resume

@@ -1,9 +1,18 @@
 import React from "react";
 import WorkExperienceItem from "./WorkExperienceItem";
 const experiences = [
+      {
+      date: "APR 2025 - CURRENT",
+      title: "Frontend Developer Intern",
+      company: "Squareboat",
+      description:
+        `Rebuilt the company’s internal website including the landing page and a sub-brand site with an emphasis on engaging
+animations, responsive design, and optimized performance. Redesigned the internal platform UI/UX, focusing on clean design, responsiveness, and usability, resulting in a more
+intuitive and visually appealing user experience resulting in a more dynamic and interactive platform.`,
+    },
     {
       date: "SEP 2024 - DEC 2024",
-      title: "React JS Developer Intern",
+      title: "Frontend Developer Intern",
       company: "Millennia Ahead Technology",
       description:
         `Leveraged React, antdesign, and flexchart to design and develop a highly interactive and responsive

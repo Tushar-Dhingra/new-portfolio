@@ -1,10 +1,10 @@
 "use client"
-
+import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
-const CaseStudyCard = ({ imgSrc, title, description }) => {
+const CaseStudyCard = ({ imgSrc, title, description, link }) => {
     const [cursorPos, setCursorPos] = useState({ x: "50%", y: "50%" });
 
     const handleMouseMove = (e) => {
@@ -27,7 +27,7 @@ const CaseStudyCard = ({ imgSrc, title, description }) => {
                     height={600}
                     src={imgSrc}
                     alt={title}
-                    className="w-full h-[300px] md:h-[500px] object-cover rounded-[30px] md:rounded-[100px] shadow-md"
+                    className="w-full h-[300px] md:h-[500px] object-contain rounded-[30px] md:rounded-[100px] transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
 
                 {/* Card Content */}
@@ -57,7 +57,7 @@ const CaseStudyCard = ({ imgSrc, title, description }) => {
                         transform: "translate(-50%, -50%)", // Center the circle
                     }}
                 >
-                    <p className="text-sm font-semibold">VIEW PROJECT</p>
+                    <Link href={link} className="text-sm font-semibold">VIEW PROJECT</Link>
                 </div>
             </div>
         </div>
