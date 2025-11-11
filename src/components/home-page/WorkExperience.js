@@ -3,8 +3,8 @@ import WorkExperienceItem from "./WorkExperienceItem";
 const experiences = [
       {
       date: "APR 2025 - CURRENT",
-      title: "Frontend Developer Intern",
-      company: "Squareboat",
+      title: "Software Developer Intern",
+      company: "Squareboat Solutions",
       description:
         `Rebuilt the company’s internal website including the landing page and a sub-brand site with an emphasis on engaging
 animations, responsive design, and optimized performance. Redesigned the internal platform UI/UX, focusing on clean design, responsiveness, and usability, resulting in a more
