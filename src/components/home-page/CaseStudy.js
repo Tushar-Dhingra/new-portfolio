@@ -5,6 +5,18 @@ import CaseStudyCard from "./CaseStudyCard";
 const CaseStudy = () => {
     const caseStudies = [
         {
+            imgSrc: "/assets/img/gymApp.png",
+            title: "Gym Management System",
+            description: "A modern, responsive web application for managing gym members, memberships, and operations built with React.js and Tailwind CSS.",
+            link: "https://gym-management-system-three-zeta.vercel.app/",
+        },
+        {
+            imgSrc: "/assets/img/timetableApp.png",
+            title: "School Timetable Builder",
+            description: "A complete timetable management system for schools built with Node.js, Express, TypeScript, Next.js, and Tailwind CSS.",
+            link: "https://school-timetable-builder-gxss-ivaq1rw0t.vercel.app/timetable",
+        },
+        {
             imgSrc: "/assets/img/caseImg-1.png",
             title: "Ticketr",
             description: "Ticket booking platform with real-time seat management and payments integration.",

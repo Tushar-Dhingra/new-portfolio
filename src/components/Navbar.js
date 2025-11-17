@@ -43,16 +43,19 @@ const Navbar = () => {
                 {/* Contact */}
                 <div className="hidden md:flex relative items-center justify-end">
                 <span className="flex items-center space-x-2">
-                    <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download={true}
-                        href="/assets/Resume.pdf"
+                    <button
+                        onClick={() => {
+                            window.open('/assets/Resume.pdf', '_blank');
+                            const link = document.createElement('a');
+                            link.href = '/assets/Resume.pdf';
+                            link.download = 'Resume.pdf';
+                            link.click();
+                        }}
                         className="flex items-center bg-gray-700 px-5 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-200 ease-in"
                     >
                         <IoMdDownload className="mr-2 mt-1" />
                         Resume
-                    </a>
+                    </button>
                 </span>
 
                 </div>

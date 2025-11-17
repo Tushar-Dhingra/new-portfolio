@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import BannerIcon from './BannerIcon'
 import Link from 'next/link'
@@ -17,12 +18,18 @@ const Banner = () => {
 
                 {/* Visit Link Button */}
                 <div className="mt-12 mb-28">
-                    <Link
-                        href="/assets/Resume.pdf"
+                    <button
+                        onClick={() => {
+                            window.open('/assets/Resume.pdf', '_blank');
+                            const link = document.createElement('a');
+                            link.href = '/assets/Resume.pdf';
+                            link.download = 'Resume.pdf';
+                            link.click();
+                        }}
                         className="inline-block bg-transparent border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition"
                     >
                         Resume
-                    </Link>
+                    </button>
                 </div>
 
                 {/* logo animation */}
